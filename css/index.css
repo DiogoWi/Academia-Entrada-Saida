@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-block: 20px;
+    text-shadow: 5px 5px 3px black;
+}
+
+main {
+    max-width: 1020px;
+    padding: 10px;
+    height: 495px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .25);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+main div {
+    margin-bottom: 10px;
+}
+
+main label {
+    font-size: 20px;
+    margin-right: 10px;
+    text-shadow: 3px 3px 2px black;
+}
+
+main button {
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #666;
+}
+
+main button:hover {
+    background-color: #444;
+}
+
+main input, main select {
+    width: 200px;
+    padding: 3px;
+    border: 1px solid black;
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #666;
+}
+
+main input::placeholder {
+    color: white;
+}
+
+section {
+    margin-top: 50px;
+    max-height: calc(100% - 118px);
+    overflow: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+}
+
+thead{
+    top: 0;
+    position: sticky;
+    background-color: rgb(102, 102, 102);
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-shadow: 3px 3px 2px black;
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Tirar as bordas extras */
+/* Esquerda */
+tr th:first-child, td:first-child {
+    border-left: none;
+}
+
+/* Direita */
+tr th:last-child, td:last-child {
+    border-right: none;
+}
+
+/* Topo */
+tr:first-child th {
+    border-top: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+::-webkit-scrollbar {
+    background-color: #666;
+    width: 14px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border: 4px solid #666;
+    border-radius: 10px;
+}
